@@ -49,7 +49,8 @@ class Prover:
           F: Finite field selection. This is the security parameter.
 
         Returns:
-          Sum of `g`
+          Sum of `g`. During round 0, the sum will be an integer (degree-0 polynomial).
+            In all other rounds, the sum will be a monomial.
         """
         # For debugging/intuition
         print(f"\nRound {round}")
